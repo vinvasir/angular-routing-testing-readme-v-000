@@ -15,5 +15,11 @@ describe('Routes', function () {
 
 			expect(state.url).toEqual('/settings');
 		});
+
+		it('should use the correct template', function(){
+			state = $state.get('settings');
+
+			expect(state.templateUrl).toEqual('views/settings.html');
+		});
 	});
 });
